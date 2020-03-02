@@ -5,7 +5,7 @@ import About from './components/About/about';
 import Header from './components/HeaderCompnent/header';
 // import Breweries from './components/Breweries/breweries';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './resources/styles.css';
+import './resources/style.css';
 
 function App() {
   return (
