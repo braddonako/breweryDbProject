@@ -14,7 +14,7 @@ function App() {
         <Switch>  
           <Route path="/" component={Home} exact/>
           <Route path='/about' component={About} exact/>
-          {/* <Route path='/breweries' component={Breweries} exact/> */}
+          <Route path='/breweries' component={Breweries} exact/>
         </Switch>
       </div>
     </BrowserRouter>
