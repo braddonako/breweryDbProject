@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/Home/home';
 import About from './components/About/about';
 import Breweries from './components/Breweries/breweries'
-import Header from './components/HeaderCompnent/header';
+import Header from './components/HeaderComponent/header';
 import Beers from './components/Beers/beers';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
