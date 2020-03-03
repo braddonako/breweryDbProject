@@ -13,9 +13,10 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json());
 
 const port = process.env.PORT || 8000;
+const apiKey = process.env.API_KEY; 
 
 app.get('/breweries', async (req, res)=>{
-    const apiUrl = 'http://api.brewerydb.com/v2/breweries/?key=cff424ceafd1f79ce7f6adfbdeb8c034';
+    const apiUrl = `http://api.brewerydb.com/v2/breweries/?key=${apiKey}`;
     const response = await fetch(apiUrl);
     const json = await response.json();
     console.log(json);
@@ -23,7 +24,7 @@ app.get('/breweries', async (req, res)=>{
 })
 
 app.get('/beers', async(req,res) => {
-    const apiUrl = 'http://api.brewerydb.com/v2/beers/?key=cff424ceafd1f79ce7f6adfbdeb8c034';
+    const apiUrl = `http://api.brewerydb.com/v2/beers/?key=${apiKey}`;
     const response = await fetch(apiUrl);
     const json = await response.json();
     console.log(json);
