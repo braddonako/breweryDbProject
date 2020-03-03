@@ -22,6 +22,13 @@ app.get('/breweries', async (req, res)=>{
 
 })
 
+app.get('/beers', async(req,res) => {
+    const apiUrl = 'http://api.brewerydb.com/v2/beers/?key=cff424ceafd1f79ce7f6adfbdeb8c034';
+    const response = await fetch(apiUrl);
+    const json = await response.json();
+    console.log(json);
+})
+
 app.listen(port, () => {
     console.log(`I am listening. ${port}`)
 })
