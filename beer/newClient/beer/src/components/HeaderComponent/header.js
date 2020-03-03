@@ -3,11 +3,13 @@ import {Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 const Header = () => {
     return (
-    <Navbar style={{backgroundColor: '#E66767', color: 'white', textTransform: 'uppercase', padding: '15px', opacity: '.9'}}>
+    <Navbar>
       <Navbar.Brand href="/">BreweryDB Project</Navbar.Brand>
       <Nav className="mr-auto">
-        <NavDropdown title="Stuff" id="collasible-nav-dropdown">
+        <NavDropdown title="Breweries and Beers" id="collasible-nav-dropdown">
           <NavDropdown.Item href = "/about" >About this App</NavDropdown.Item>
+          <NavDropdown.Item href = "/breweries" >Breweries</NavDropdown.Item>
+          <NavDropdown.Item href = "/beers" >beers</NavDropdown.Item>
           <NavDropdown.Divider/>
         </NavDropdown>
       </Nav>
