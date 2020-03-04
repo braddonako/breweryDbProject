@@ -5,6 +5,7 @@ const Header = () => {
     return (
     <Navbar>
       <Navbar.Brand href="/">BreweryDB Project</Navbar.Brand>
+      <Nav.Link href="/breweries">Breweries</Nav.Link>
       <Nav className="mr-auto">
         <NavDropdown title="Breweries and Beers" id="collasible-nav-dropdown">
           <NavDropdown.Item href = "/about" >About this App</NavDropdown.Item>
