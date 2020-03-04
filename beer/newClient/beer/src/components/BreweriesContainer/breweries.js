@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import BreweriesList from './BreweriesList/index'
 
 class Breweries extends Component {
     constructor(props){
         super(props);
         this.state = {
-            breweries: {}
+            breweries: []
         }
     }
 
@@ -29,9 +30,7 @@ class Breweries extends Component {
 
     render() {
         return (
-            <div>
-                <h1>List of all Breweries</h1>
-            </div>
+            <BreweriesList />
         );
     }
 }

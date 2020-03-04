@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/Home/home';
-import Breweries from './components/Breweries/breweries'
+import Breweries from './components/BreweriesContainer/breweries'
 import About from './components/About/about';
 import Header from './components/HeaderComponent/header';
 import 'bootstrap/dist/css/bootstrap.min.css';
