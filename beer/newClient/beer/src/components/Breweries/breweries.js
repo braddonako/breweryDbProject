@@ -15,10 +15,10 @@ class Breweries extends Component {
     getAllBreweries = async () =>{
         try {
             const allBreweries = await fetch(process.env.REACT_APP_BACKEND_URL + '/breweries');
-            console.log(allBreweries)
+            // console.log(allBreweries)
             const parsedAllBreweries = await allBreweries.json();
             console.log('Brewery data -->', parsedAllBreweries);
-            console.log(allBreweries)
+            // console.log(allBreweries)
             this.setState({
                 breweries: parsedAllBreweries
             })
