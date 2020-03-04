@@ -8,8 +8,6 @@ const Header = () => {
       <Nav className="mr-auto">
         <NavDropdown title="Breweries and Beers" id="collasible-nav-dropdown">
           <NavDropdown.Item href = "/about" >About this App</NavDropdown.Item>
-          <NavDropdown.Item href = "/breweries" >Breweries</NavDropdown.Item>
-          <NavDropdown.Item href = "/beers" >Beers</NavDropdown.Item>
           <NavDropdown.Divider/>
         </NavDropdown>
       </Nav>
