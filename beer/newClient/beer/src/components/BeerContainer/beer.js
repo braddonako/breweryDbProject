@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Card, ListGroup, ListGroupItem, Button } from 'react-bootstrap'
 
 class Beer extends Component {
     constructor(){
@@ -26,14 +27,23 @@ class Beer extends Component {
 }
     
     render() {
-        const beersList = this.state.beers.map((beers)=> {
+        const beersList = this.state.beers.map((beers) => {
             console.log(beers)
              return(
-                <li key={beers.id}>
-                    <span>{beers.name}</span>
-                </li>
+            <Card style={{ width: '30rem' }} key={beers.id}>
+                <Card.Img variant="top" src={"holder.js/100px180"} />
+                <Card.Body>
+                    <Card.Title>{beers.name}</Card.Title>
+                    <Card.Text>
+                    {beers.description}
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+                </Card>
+
             )
         })
+    
 
         return (
             <div>
