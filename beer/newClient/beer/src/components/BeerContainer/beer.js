@@ -5,7 +5,7 @@ class Beer extends Component {
     constructor(){
         super();
         this.state = {
-            beers: []
+            beers: {}
         }
     }
     componentDidMount(){
@@ -23,32 +23,35 @@ class Beer extends Component {
             })
         } catch(err){
             console.log(err)
+        }
     }
-}
     
     render() {
-        const beersList = this.state.beers.map((beers) => {
-            console.log(beers)
-             return(
-            <Card style={{ width: '30rem' }} key={beers.id}>
-                <Card.Img variant="top" src={"holder.js/100px180"} />
-                <Card.Body>
-                    <Card.Title>{beers.name}</Card.Title>
-                    <Card.Text>
-                    {beers.description}
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-                </Card>
+        // const beersList = this.state.beers.map((beers) => {
+        //     console.log(beers)
+        //      return(
+        //         <Card style={{ width: '30rem' }} key={beers.id}>
+        //             <Card.Img variant="top" src={"holder.js/100px180"} />
+        //             <Card.Body>
+        //                 <Card.Title>{beers.name}</Card.Title>
+        //                 <Card.Text>
+        //                 {beers.description}
+        //                 </Card.Text>
+        //                 <Button variant="primary">More info</Button>
+        //             </Card.Body>
+        //         </Card>
 
-            )
-        })
+        //     )
+        
+        // })
+        const beers = this.state.beers
+        console.log(beers)
     
 
         return (
             <div>
                 <h1>Beer list</h1>
-                <ul>{beersList}</ul>
+                
             </div>
         );
     }
