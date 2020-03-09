@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+}
+
+.beersList {
+    /* color:blue; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}

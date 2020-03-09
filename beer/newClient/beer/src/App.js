@@ -6,6 +6,7 @@ import Beer from './components/BeerContainer/beer'
 import About from './components/About/about';
 import Header from './components/HeaderComponent/header';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Resources/CSS/styles.css';
 
 function App() {
   return (
