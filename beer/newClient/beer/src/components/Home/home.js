@@ -4,16 +4,16 @@ import {Carousel } from 'react-bootstrap';
 const Home = () => {
     return (
         <div>
-        <div>
+        {/* <div>
             <h1>This is the home page for my BreweryDB app</h1>
             <p>Some cool stuff will go here yeee yeee</p>
-        </div>
+        </div> */}
         <div>
         <Carousel>
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="holder.js/800x400?text=First slide&bg=373940"
+                src="https://i.imgur.com/gWbL7jP.jpg"
                 alt="First slide"
                 />
                 <Carousel.Caption>
@@ -24,7 +24,7 @@ const Home = () => {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="holder.js/800x400?text=Second slide&bg=282c34"
+                src="https://i.imgur.com/IJdXnXE.jpg"
                 alt="Third slide"
                 />
 
@@ -36,7 +36,7 @@ const Home = () => {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="holder.js/800x400?text=Third slide&bg=20232a"
+                src="https://i.imgur.com/5M91U03.jpg"
                 alt="Third slide"
                 />
 

@@ -10,7 +10,7 @@ const Footer = () => {
         <footer className='bck_b_dark'>
             <div className='container'>
                 <div className='logo'>
-                    Waves
+                    BreweryDB Project
                 </div>
                 <div className='wrapper'>
                     <div className='left'>

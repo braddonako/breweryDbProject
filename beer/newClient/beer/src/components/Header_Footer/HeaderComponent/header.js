@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Button, Form, FormControl } from 'react-bootstrap';
 
 const Header = () => {
     return (
@@ -12,6 +12,10 @@ const Header = () => {
           <NavDropdown.Item href = "/beers" >Beers</NavDropdown.Item>
           <NavDropdown.Divider/>
         </NavDropdown>
+        <Form inline pullRight>
+          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+          <Button variant="outline-success">Search</Button>
+        </Form>
       </Nav>
     </Navbar>
     );
