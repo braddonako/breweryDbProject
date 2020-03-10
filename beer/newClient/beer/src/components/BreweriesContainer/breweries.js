@@ -49,7 +49,7 @@ class Breweries extends Component {
 
         return (
             <div>
-                <h1 className='breweriesHeader'>Breweries list</h1>
+                <h1 className='breweriesHeader'>BREWERIES</h1>
                 <ul className='breweriesList'>{breweriesList}</ul>
             </div>
             

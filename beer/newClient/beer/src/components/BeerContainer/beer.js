@@ -48,7 +48,7 @@ class Beer extends Component {
     
         return (
             <div>
-                <h1 className='beerListHeader'>BEER LIST</h1>
+                <h1 className='beerListHeader'>BEER's</h1>
                 <ul className='beersList'>{beersList}</ul>
             </div>
         );
