@@ -16,7 +16,7 @@ class Beer extends Component {
         try {
             const allBeers = await fetch(process.env.REACT_APP_BACKEND_URL + '/beers');
             // console.log(allBeers)
-            const parsedAllBeers = await allBeers.json();
+            const parsedAllBeers = await allBeers.json(); 
             // console.log(parsedAllBeers)
             this.setState ({
                 beers: parsedAllBeers.data
@@ -29,12 +29,13 @@ class Beer extends Component {
     
     render() {
         const beersList = this.state.beers.map((beers) => {
-            console.log(beers)
+            console.log(beers.labels)
+           
             
             return(
             <Card style={{ width: '36rem' }} key={beers.id}>
                 <Card.Body>
-                    <Card.Title>{beers.name}</Card.Title>
+                    <Card.Title style={{textAlign: 'center', fontSize: '3em'}}>{beers.name}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">ABV: {beers.abv}</Card.Subtitle>
                     <Card.Text>
                     {beers.description}
@@ -47,8 +48,8 @@ class Beer extends Component {
     
         return (
             <div>
-                <h1>Beer list</h1>
-                <ul Class='beersList'>{beersList}</ul>
+                <h1 className='beerListHeader'>BEER LIST</h1>
+                <ul className='beersList'>{beersList}</ul>
             </div>
         );
     }

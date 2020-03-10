@@ -1,10 +1,24 @@
-h1 {
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+
+
+/* BEER CONTAINER */
+.beerListHeader, .breweriesHeader {
     text-align: center;
+    font-size: 5em;
+    font-family: Oswald, sans-serif;
+
 }
 
 .beersList {
-    /* color:blue; */
+    color:blue;
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
 }
+
+/* BREWERIES CONTAINER*/
+.breweriesList {
+    display: flex;
+    flex-wrap: wrap;
+    
+ }

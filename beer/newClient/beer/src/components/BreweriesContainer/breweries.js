@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Card, Button } from 'react-bootstrap'
 
 class Breweries extends Component {
     constructor(props){
@@ -31,17 +32,25 @@ class Breweries extends Component {
         const breweriesList = this.state.breweries.map((breweries) => {
             console.log(breweries);
             return(
-                <li key={breweries.id}>
-                    <span>{breweries.name}
-                    </span>
-                </li>
+            <Card style={{ width: '30rem' }}>
+                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Body>
+                    <Card.Title>{breweries.name}</Card.Title>
+                    <Card.Text>
+                    {breweries.description}
+                    </Card.Text>
+                    <Button variant="primary">Learn More</Button>
+                </Card.Body>
+            </Card>
             )
+            
+
         })
 
         return (
             <div>
-                <h1>Breweries list</h1>
-                <ul>{breweriesList}</ul>
+                <h1 className='breweriesHeader'>Breweries list</h1>
+                <ul className='breweriesList'>{breweriesList}</ul>
             </div>
             
         );
