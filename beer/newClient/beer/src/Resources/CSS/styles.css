@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 
 body {
-    margin:0;
-    padding:0;
+    margin:0 auto;
+    padding-bottom: 0;
     font-family: 'Oswald', sans-serif;
     color: #404040;
     position: relative;
@@ -48,7 +48,7 @@ BREWERIES CONTAINER
 /*=========
    FOOTER 
  ========*/
-footer {
+#footer {
     position: absolute;
     bottom: 0;
     width: 100%;

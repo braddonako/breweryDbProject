@@ -40,8 +40,8 @@ class Beer extends Component {
                     <Card.Text>
                     {beers.description}
                     </Card.Text>
-                    <Card.Link href="#">Brewery info</Card.Link>
                 </Card.Body>
+                <Button variant="primary" style={{width: '50%'}}>Click to learn more</Button>
             </Card>
             )
         })
