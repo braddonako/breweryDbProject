@@ -24,17 +24,25 @@ body {
 }
 
 /*======================== 
+NAVBAR
+========================*/
+#dropdown {
+    color:red;
+}
+
+/*======================== 
 BEERS CONTAINER
 ========================*/
 .beerListHeader, .breweriesHeader {
     text-align: center;
     font-size: 5em;
     font-family: Oswald, sans-serif;
-
+    color: dodgerblue;
+    padding-bottom: 50px;
 }
 
 .beersList {
-    color:blue;
+    color:dodgerblue;
     display: flex;
     flex-wrap: wrap;
     margin: 10px;

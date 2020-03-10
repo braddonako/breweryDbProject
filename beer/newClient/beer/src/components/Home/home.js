@@ -13,7 +13,7 @@ const Home = () => {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="https://i.imgur.com/gWbL7jP.jpg"
+                src="https://i.imgur.com/gWbL7jP.jpg slide&bg=373940"
                 alt="First slide"
                 />
                 <Carousel.Caption>
@@ -24,7 +24,7 @@ const Home = () => {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="https://i.imgur.com/IJdXnXE.jpg"
+                src="https://i.imgur.com/IJdXnXE.jpg slide&bg=282c34"
                 alt="Third slide"
                 />
 
@@ -36,13 +36,13 @@ const Home = () => {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="https://i.imgur.com/5M91U03.jpg"
+                src="https://i.imgur.com/5M91U03.jpg slide&bg=20232a"
                 alt="Third slide"
                 />
 
                 <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <h3 style={{color: 'black'}}>Third slide label</h3>
+                <p style={{color: 'black'}}>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
