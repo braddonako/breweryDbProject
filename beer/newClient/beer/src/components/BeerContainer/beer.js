@@ -31,7 +31,6 @@ class Beer extends Component {
         const beersList = this.state.beers.map((beers) => {
             console.log(beers.labels)
            
-            
             return(
             <Card style={{ width: '36rem' }} key={beers.id} className='card'>
                 <Card.Body>

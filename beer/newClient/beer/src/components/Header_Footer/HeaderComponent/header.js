@@ -12,7 +12,7 @@ const Header = () => {
           <NavDropdown.Item href = "/beers" >Beers</NavDropdown.Item>
           <NavDropdown.Divider/>
         </NavDropdown>
-        <Form inline pullRight>
+        <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
           <Button variant="outline-success">Search</Button>
         </Form>
