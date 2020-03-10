@@ -4,7 +4,8 @@ import Home from './components/Home/home';
 import Breweries from './components/BreweriesContainer/breweries'
 import Beer from './components/BeerContainer/beer'
 import About from './components/About/about';
-import Header from './components/HeaderComponent/header';
+import Header from './components/Header_Footer/HeaderComponent/header';
+import Footer from './components/Header_Footer/Footer/footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Resources/CSS/styles.css';
 
@@ -19,6 +20,7 @@ function App() {
           <Route path='/breweries' component={Breweries}/>
           <Route path='/beers' component={Beer}/>
         </Switch>
+        <Footer/>
       </div>
     </BrowserRouter>
   );

@@ -32,7 +32,7 @@ class Breweries extends Component {
         const breweriesList = this.state.breweries.map((breweries) => {
             console.log(breweries);
             return(
-            <Card style={{ width: '30rem' }}>
+            <Card style={{ width: '37.5rem' }}>
                 <Card.Img variant="top" src="holder.js/100px180" />
                 <Card.Body>
                     <Card.Title>{breweries.name}</Card.Title>
