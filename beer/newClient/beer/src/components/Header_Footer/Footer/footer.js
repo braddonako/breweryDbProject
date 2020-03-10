@@ -43,7 +43,7 @@ const Footer = () => {
                                 />
                                 <div className='nfo'>
                                     <div>Working Hours</div>
-                                    <div>9am-5pm</div>
+                                    <div>24/7</div>
                                 </div>
                             </div>
                         <div className='tag'>

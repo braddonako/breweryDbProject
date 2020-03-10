@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Oswald', sans-serif;
+    color: #404040;
+    position: relative;
+}
+
+.bck_b_dark {
+    background: #272723;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
 
 /*======================== 
 BEERS CONTAINER
@@ -24,14 +40,10 @@ BREWERIES CONTAINER
 .breweriesList {
     display: flex;
     flex-wrap: wrap;
-    
  }
 
 
-.container {
-    width: 1100px;
-    margin: 0 auto;
-}
+
 
 /*=========
    FOOTER 
@@ -39,6 +51,7 @@ BREWERIES CONTAINER
 footer {
     position: absolute;
     bottom: 0;
+    width: 100%;
 }
 
 footer .logo {

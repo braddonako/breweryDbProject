@@ -20,7 +20,7 @@ function App() {
           <Route path='/breweries' component={Breweries}/>
           <Route path='/beers' component={Beer}/>
         </Switch>
-        <Footer id='footer'/>
+        <Footer/>
       </div>
     </BrowserRouter>
   );
