@@ -29,6 +29,7 @@ class Breweries extends Component {
     }
 
     render() {
+        // 
         const breweriesList = this.state.breweries.map((breweries) => {
             console.log(breweries);
             return(
@@ -43,8 +44,6 @@ class Breweries extends Component {
                 </Card.Body>
             </Card>
             )
-            
-
         })
 
         return (

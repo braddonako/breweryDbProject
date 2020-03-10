@@ -9,9 +9,13 @@ body {
     background: #404040;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: dodgerblue;
+}
+
 .page_container {
     min-height: 75vh;
-    padding-top: 25px;
+    padding-top: 10px;
 }
 
 .bck_b_dark {

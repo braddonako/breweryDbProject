@@ -17,21 +17,21 @@ const Home = () => {
                 alt="First slide"
                 />
                 <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h3>Welcome to the Brads Brew DB!</h3>
+                <p>Please take the time to review and add beers that you enjoyed to our database.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="https://i.imgur.com/IJdXnXE.jpg slide&bg=282c34"
+                src="https://i.imgur.com/U0AZF1E.jpg slide&bg=282c34"
                 alt="Third slide"
                 />
 
-                <Carousel.Caption>
+                {/* <Carousel.Caption>
                 <h3>Second slide label</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
+                </Carousel.Caption> */}
             </Carousel.Item>
             <Carousel.Item>
                 <img
@@ -40,10 +40,10 @@ const Home = () => {
                 alt="Third slide"
                 />
 
-                <Carousel.Caption>
-                <h3 style={{color: 'black'}}>Third slide label</h3>
-                <p style={{color: 'black'}}>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </Carousel.Caption>
+                {/* <Carousel.Caption> */}
+                {/* <h3 style={{color: 'black'}}>Third slide label</h3>
+                <p style={{color: 'black'}}>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
+                {/* </Carousel.Caption> */}
             </Carousel.Item>
         </Carousel>
         </div>
