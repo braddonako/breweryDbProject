@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 
 
-/* BEER CONTAINER */
+/*======================== 
+BEERS CONTAINER
+========================*/
 .beerListHeader, .breweriesHeader {
     text-align: center;
     font-size: 5em;
@@ -16,9 +18,50 @@
     margin: 10px;
 }
 
-/* BREWERIES CONTAINER*/
+/*======================== 
+BREWERIES CONTAINER
+========================*/
 .breweriesList {
     display: flex;
     flex-wrap: wrap;
     
  }
+
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/*=========
+   FOOTER 
+ ========*/
+footer .wrapper {
+    display: flex;
+    color: #828282;
+}
+
+footer .left,
+footer .right {
+    flex: 1;
+}
+
+footer .business_nfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .business_nfo .tag {
+    flex-grow: 1;
+    position: relative;
+    width: 50%;
+    margin-bottom: 30px;
+}
+footer .business_nfo .icon {
+    position: absolute;
+    font-size: 26px;
+    top: 10px;
+}
+footer .business_nfo .nfo {
+    padding-left: 40px;
+}
