@@ -14,14 +14,17 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header />
+        <div className='page_container'>
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path='/about' component={About} exact />
           <Route path='/breweries' component={Breweries}/>
           <Route path='/beers' component={Beer}/>
         </Switch>
+        </div>
         <Footer id='footer'/>
       </div>
+       
     </BrowserRouter>
   );
 }
