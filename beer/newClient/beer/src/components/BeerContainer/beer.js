@@ -32,7 +32,7 @@ class Beer extends Component {
             console.log(beers.labels)
            
             return(
-            <Card style={{ width: '36rem' }} key={beers.id} className='card'>
+            <Card style={{ width: '37rem', display: 'flex', flexWrap: 'wrap' }} key={beers.id} className='card'>
                 <Card.Body>
                     <Card.Title style={{textAlign: 'center', fontSize: '3em'}}>{beers.name}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">ABV: {beers.abv}</Card.Subtitle>

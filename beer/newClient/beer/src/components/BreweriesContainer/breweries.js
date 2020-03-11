@@ -33,7 +33,7 @@ class Breweries extends Component {
         const breweriesList = this.state.breweries.map((breweries) => {
             console.log(breweries);
             return(
-            <Card style={{ width: '37.5rem', flex: 1, flexDirection: 'row'}} className='card' key={breweries.id}>
+            <Card style={{ width: '37.5rem', display: 'flex', flexWrap: 'wrap'}} className='card' key={breweries.id}>
                 <Card.Img variant="top" src="holder.js/100px180" />
                 <Card.Body>
                     <Card.Title>{breweries.name}</Card.Title>
