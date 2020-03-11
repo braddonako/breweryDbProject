@@ -18,7 +18,7 @@ const Home = () => {
                 />
                 <Carousel.Caption>
                 <h3>Welcome to the Brads Brew DB!</h3>
-                <p>Please take the time to review and add beers that you enjoyed to our database.</p>
+                <p>Please take the time to add reviews and beers that you enjoyed to our database.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>

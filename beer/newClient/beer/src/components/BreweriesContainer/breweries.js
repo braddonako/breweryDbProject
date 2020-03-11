@@ -33,7 +33,7 @@ class Breweries extends Component {
         const breweriesList = this.state.breweries.map((breweries) => {
             console.log(breweries);
             return(
-            <Card style={{ width: '37.5rem' }} className='card' key={breweries.id}>
+            <Card style={{ width: '37.5rem', flex: 1, flexDirection: 'row'}} className='card' key={breweries.id}>
                 <Card.Img variant="top" src="holder.js/100px180" />
                 <Card.Body>
                     <Card.Title>{breweries.name}</Card.Title>
@@ -48,8 +48,13 @@ class Breweries extends Component {
 
         return (
             <div>
-                <h1 className='breweriesHeader'>BREWERIES</h1>
-                <ul className='breweriesList'>{breweriesList}</ul>
+                <div>
+                    <h1 className='breweriesHeader'>BREWERIES</h1>
+                </div>
+                <div>
+                    <ul className='breweriesList'>{breweriesList}</ul>
+                </div>
+                
             </div>
             
         );

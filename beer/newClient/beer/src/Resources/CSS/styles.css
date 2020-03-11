@@ -39,11 +39,16 @@ NAVBAR
 BEERS CONTAINER
 ========================*/
 .beerListHeader, .breweriesHeader {
-    text-align: center;
+    display: inline-block;
+    /* text-align: center; */
     font-size: 5em;
     font-family: Oswald, sans-serif;
     color: dodgerblue;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
+    border: 1px dashed white;
+    /* border-width: 10px; */
+    /* height: 100px; */
+    
 }
 
 .beersList {
