@@ -30,11 +30,15 @@ class Beer extends Component {
     render() {
         const beersList = this.state.beers.map((beers) => {
             // console.log(beers.labels)
-            if(beers.labels === 'undefined'){
-                console.log('This is an undefined label')
+           function checkBeerLabels(){ 
+            if(beers.labels === undefined){
+                console.log('fuck')
             } else{
-                console.log(beers.labels)
+                console.log(beers.labels.medium)
             }
+        }
+        
+        checkBeerLabels()
            
             return(
             <Card style={{ width: '37rem', display: 'flex', flexWrap: 'wrap' }} key={beers.id} className='card'>

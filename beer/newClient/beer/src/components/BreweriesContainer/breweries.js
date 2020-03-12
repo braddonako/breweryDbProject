@@ -28,18 +28,19 @@ class Breweries extends Component {
         }
     }
 
-    getImagesofBreweries = async() =>{
-
-    }
-
     render() {
         // 
         const breweriesList = this.state.breweries.map((breweries) => {
             console.log(breweries.images);
 
-            // I need to access breweries.images (which is an object)
-            
-            //then loop through it, and grab the icon
+           function checkBreweriesLabels() {
+               if (breweries.labels === undefined) {
+                   console.log('fuck')
+               } else {
+                   console.log(breweries.labels.medium)
+               }
+           }
+           checkBreweriesLabels();
         
             return(
             <Card style={{ width: '37.5rem', display: 'flex', flexWrap: 'wrap'}} className='card' key={breweries.id}>
