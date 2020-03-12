@@ -18,7 +18,7 @@ class Breweries extends Component {
             const allBreweries = await fetch(process.env.REACT_APP_BACKEND_URL + '/breweries');
             // console.log(allBreweries)
             const parsedAllBreweries = await allBreweries.json();
-            // console.log(parsedAllBreweries, '<-- brewery data');
+            console.log(parsedAllBreweries.data.length, '<-- brewery data');
             // console.log(allBreweries)
             this.setState({
                 breweries: parsedAllBreweries.data
@@ -28,13 +28,22 @@ class Breweries extends Component {
         }
     }
 
+    getImagesofBreweries = async() =>{
+
+    }
+
     render() {
         // 
         const breweriesList = this.state.breweries.map((breweries) => {
-            console.log(breweries);
+            console.log(breweries.images);
+
+            // I need to access breweries.images (which is an object)
+            
+            //then loop through it, and grab the icon
+        
             return(
             <Card style={{ width: '37.5rem', display: 'flex', flexWrap: 'wrap'}} className='card' key={breweries.id}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src={breweries.images} />
                 <Card.Body>
                     <Card.Title>{breweries.name}</Card.Title>
                     <Card.Text>
