@@ -31,20 +31,20 @@ class Breweries extends Component {
     render() {
         // 
         const breweriesList = this.state.breweries.map((breweries) => {
-            console.log(breweries.images);
-
-           function checkBreweriesLabels() {
-               if (breweries.labels === undefined) {
+            // console.log(breweries.images.medium);
+            const myImage = [];
+               if (breweries.images === undefined) {
                    console.log('fuck')
                } else {
-                   console.log(breweries.labels.medium)
+                //    console.log(breweries.images.medium)
+                   myImage.push(breweries.images.medium)
+                //    console.log(myImage)
                }
-           }
-           checkBreweriesLabels();
+           console.log(myImage)
         
             return(
             <Card style={{ width: '37.5rem', display: 'flex', flexWrap: 'wrap'}} className='card' key={breweries.id}>
-                <Card.Img variant="top" src={breweries.images} />
+                <Card.Img variant="top" src={myImage} />
                 <Card.Body>
                     <Card.Title>{breweries.name}</Card.Title>
                     <Card.Text>

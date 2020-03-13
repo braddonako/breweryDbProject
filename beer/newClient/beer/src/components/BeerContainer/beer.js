@@ -30,18 +30,21 @@ class Beer extends Component {
     render() {
         const beersList = this.state.beers.map((beers) => {
             // console.log(beers.labels)
-           function checkBeerLabels(){ 
+           
+            const myLabels = []
             if(beers.labels === undefined){
-                console.log('fuck')
+                console.log('No image')
             } else{
-                console.log(beers.labels.medium)
+                // console.log(beers.labels.medium)
+                myLabels.push(beers.labels.medium)
+                // labels.toString()
+                console.log(myLabels)
             }
-        }
-        
-        checkBeerLabels()
+
            
             return(
-            <Card style={{ width: '37rem', display: 'flex', flexWrap: 'wrap' }} key={beers.id} className='card'>
+            <Card style={{ width: '25rem', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }} key={beers.id} className='card'>
+                <Card.Img variant="top" src={myLabels}  />
                 <Card.Body>
                     <Card.Title style={{textAlign: 'center', fontSize: '3em'}}>{beers.name}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">ABV: {beers.abv}</Card.Subtitle>
