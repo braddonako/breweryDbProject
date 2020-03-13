@@ -44,7 +44,7 @@ class Beer extends Component {
            
             return(
             <Card style={{ width: '25rem', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }} key={beers.id} className='card'>
-                <Card.Img variant="top" src={myLabels}  />
+                <Card.Img variant="top" src={myLabels}  style={{height: '100px', width: '100px'}}/>
                 <Card.Body>
                     <Card.Title style={{textAlign: 'center', fontSize: '3em'}}>{beers.name}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">ABV: {beers.abv}</Card.Subtitle>
