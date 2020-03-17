@@ -55,6 +55,16 @@ app.get('/beers', async(req,res) => {
     console.log(json);
 })
 
+// Get all beers for the brewery id
+
+app.get('/breweryBeers', async(req, res)=> {
+    const apiUrl = `http://api.brewerydb.com/v2/brewery/BznahA/beers?key=${apiKey}`;
+    const response = await fetch(apiUrl);
+    const json = await response.json();
+    res.send(json);
+    console.log(json)
+})
+
 const port = process.env.PORT || 8000;
 app.listen(port, () => {
     console.log(`I am listening. ${port}`)

@@ -13,14 +13,6 @@ class Breweries extends Component {
         this.getAllBreweries();
     }
 
-    // showMoreInfo = async () = {
-    //     try {
-
-    //     }catch(err){
-    //         console.log(err)
-    //     }
-    // }
-
     getAllBreweries = async () =>{
         try {
             const allBreweries = await fetch(process.env.REACT_APP_BACKEND_URL + '/breweries');
@@ -52,7 +44,7 @@ class Breweries extends Component {
         
             return(
             <Card style={{ width: '37.5rem', display: 'flex', flexWrap: 'wrap'}} className='card' key={breweries.id}>
-                <Card.Img variant="top" src={myImage} style={{height: '100px', width: '100px'}}/>
+                <Card.Img variant="top" src={myImage} style={{height: '150px', width: '300px'}}/>
                 <Card.Body>
                     <Card.Title>{breweries.name}</Card.Title>
                     <Card.Text>
