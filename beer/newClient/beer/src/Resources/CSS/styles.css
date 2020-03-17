@@ -40,7 +40,7 @@ BEERS CONTAINER
 ========================*/
 .beerListHeader, .breweriesHeader {
     text-align: center;
-    display: inline-block;
+    /* display: inline-block; */
     /* text-align: center; */
     font-size: 5em;
     font-family: Oswald, sans-serif;
