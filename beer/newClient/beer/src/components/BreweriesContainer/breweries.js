@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Button } from 'react-bootstrap'
+// import BreweryBeers from './components/BreweryBeersContainer/breweryBeers';
 
 class Breweries extends Component {
     constructor(props){
@@ -29,18 +30,18 @@ class Breweries extends Component {
     }
 
     render() {
-        // 
         const breweriesList = this.state.breweries.map((breweries) => {
-            // console.log(breweries.images.medium);
+            // console.log(breweries.id);
+        
             const myImage = [];
                if (breweries.images === undefined) {
-                   console.log('fuck')
+                //    console.log('a ha ha')
                } else {
                 //    console.log(breweries.images.medium)
                    myImage.push(breweries.images.medium)
                 //    console.log(myImage)
                }
-           console.log(myImage)
+        //    console.log(myImage)
         
             return(
             <Card style={{ width: '37.5rem', display: 'flex', flexWrap: 'wrap'}} className='card' key={breweries.id}>

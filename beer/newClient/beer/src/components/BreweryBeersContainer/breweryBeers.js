@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
-import Breweries from './components/BreweriesContainer/breweries'
+// import Breweries from './components/BreweriesContainer/breweries'
 
 class BreweryBeers extends Component {
 
     componentDidMount(){
-        Breweries.getAllBreweries()
+        this.getBreweryBeers()
     }
 
     getBreweryBeers = async () => {
         try {
             const breweryBeers = await fetch(process.env.REACT_APP_BACKEND_URL + '/breweryBeers');
-            console.log(breweryBeers)
+            // console.log(breweryBeers, 'here is the log');
+            const parsedBreweryBeers = await breweryBeers.json();
+            console.log(parsedBreweryBeers.data, 'data')
         } catch (err) {
             console.log(err)
         }
     }
+
     render() {
         return (
             <div>
