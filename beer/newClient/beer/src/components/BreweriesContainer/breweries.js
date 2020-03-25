@@ -14,6 +14,7 @@ class Breweries extends Component {
         this.getAllBreweries();
     }
 
+    // retrieving all of the breweries from brewerydb.
     getAllBreweries = async () =>{
         try {
             const allBreweries = await fetch(process.env.REACT_APP_BACKEND_URL + '/breweries');
@@ -35,10 +36,12 @@ class Breweries extends Component {
         
             const myImage = [];
                if (breweries.images === undefined) {
-                //    console.log('a ha ha')
+                   console.log('a ha ha')
                } else {
-                //    console.log(breweries.images.medium)
+                // console.log(breweries.images.medium)
+                    // adding image to the array so I can display it on the page
                    myImage.push(breweries.images.medium)
+                   
                 //    console.log(myImage)
                }
         //    console.log(myImage)
